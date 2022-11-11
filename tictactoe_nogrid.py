@@ -51,6 +51,9 @@ def checkStatus():
     elif grid[4] == grid[5] == grid[6] and grid[4] != "-":
         print("Game Over!\n" + grid[4] + " player won!")
         gameStatus = False
+    elif grid[1] == grid[4] == grid[7] and grid[1] != "-":
+        print("Game Over!\n" + grid[4] + " player won!")
+        gameStatus = False
     elif grid[0] == grid[4] == grid[8] and grid[0] != "-":
         print("Game Over!\n" + grid[0] + " player won!")
         gameStatus = False

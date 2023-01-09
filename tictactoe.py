@@ -169,6 +169,18 @@ def gameState() -> bool:
     elif box0.player == box4.player == box8.player and box0.player != "":
         pygame.draw.line(screen, GAMEOVER_RGB, (25, 25), (575, 575), 20)
         return True
+    elif (
+        box0.used
+        and box1.used
+        and box2.used
+        and box3.used
+        and box4.used
+        and box5.used
+        and box6.used
+        and box7.used
+        and box8.used
+    ):
+        return True
     else:
         return False
 
